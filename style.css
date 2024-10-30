@@ -1,0 +1,213 @@
+@font-face {
+    font-family: productSans;
+    src: url(assets/font/regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: productSans;
+    src: url(assets/font/bold.woff2);
+    font-weight: 600;
+}
+
+/* All pages */
+
+* {
+    font-family: productSans;
+}
+
+body {
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.navbar-img {
+    margin-right: 20px;
+}
+
+.title-home {
+    padding: 40px;
+}
+
+.title {
+    font-size: calc(3.5rem + 1.5vw);
+}
+
+.page-title {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main-container {
+    padding: 30px;
+}
+
+/* index.html */
+
+.gradient-title {
+    width: 92%;
+    height: 92%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    border-radius: 20px;
+}
+
+.btn-group-vertical {
+    background-color: transparent;
+}
+
+#menu>button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* aboutme.html */
+
+#image-col {
+    margin-top: 4vh;
+    position: fixed;
+    padding-right: 30px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    width: 100% !important;
+    height: 70vh !important;
+    object-fit: cover !important;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* works.html */
+
+#works > .works-section > .works-section-title {
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.bg-title {
+    --bs-bg-opacity: 1;
+    background-color: #6bddc2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#works > .works-section > .container > .row > .card {
+    border: transparent; 
+    max-width: 30em;
+    min-width: 11rem;
+}
+
+.card-img {
+    height: 13em;
+    border-radius: 20px !important;
+    object-fit: cover;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    border-radius: 10px !important;
+    height: 13em;
+    object-fit: cover;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* contacts.html */
+
+#instagram {
+    background-image:linear-gradient(to right, #191335, #833ab4 33.33333%, #fd1d1d 66.66666%, #fcb045);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: top left;
+    transition:all 1s ease-in-out;
+}
+
+#instagram:hover {
+    background-position: top left 100%;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+#linkedin {
+    background-image:linear-gradient(to right, #00a0dc, #0077b5 33.33333%, #4df9ff 66.66666%, #00a0dc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: top left;
+    transition:all 1s ease-in-out;
+}
+
+#linkedin:hover {
+    background-position: top left 100%;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+#github {
+    background-image:linear-gradient(to right, #000000, #000000 33.33333%, #797979 66.66666%, #2d2d2d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: top left;
+    transition:all 1s ease-in-out;
+}
+
+#github:hover {
+    background-position: top left 100%;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+#mail {
+    background-image:linear-gradient(to right, #230000, #6f2121 33.33333%, #730000 66.66666%, #b20000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: top left;
+    transition:all 1s ease-in-out;
+}
+
+#mail:hover {
+    background-position: top left 100%;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-hover {
+    font-size: 2rem !important;
+}
+
+/* Small devices */
+@media (max-width: 600px) {
+    .title {
+        font-size: x-large;
+    }
+
+    .quote {
+        font-size: large;
+    }
+
+    .row {
+        display: unset !important;
+    }
+
+    #image-col {
+        display: none;
+    }
+}
